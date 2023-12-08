@@ -3,6 +3,44 @@
         <link rel="stylesheet" href="../css/buynow.css">
         <title> BuyNow Page</title>
     </head>
+    <style>
+        #containor{
+            display: none;
+            background-color: aliceblue;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 200px;
+            height: 110px;
+            padding-top: 50px;
+            border-top: 2px solid #0076b577;
+            box-shadow: 5px 10px 18px #888888;
+           
+        }
+        #msg{
+            font-size: medium;
+            font-weight: 500;
+            font-family: Arial, Helvetica, sans-serif;
+            vertical-align: middle;
+            text-align: center;
+            color: rgba(66,66,66);
+        }
+        #ok{
+            color: #0076b577;
+            display: block;
+            width: 80px;
+            height: 30px;
+            margin: 30px auto;
+    
+        }
+        #ok:hover{
+            color: lightgreen;
+            background-color:#0076b577;
+            cursor: pointer;
+        }
+    </style>
     <body>
         <div class="header">
         <h1> Add Delivery Address :-</h1>
@@ -48,10 +86,23 @@
         </div>
              <div class="submission">
                  <form>
-                    <button> Save Address & Place Your Order </button>
+                    <button type="button"id="showMe" value="Show Me" onclick="show()"> Save Address & Place Your Order </button>
                  </form>
              </div>
-             
+             <div id="containor">
+                <div id="msg"> Your Order Placed Successfully..!</div>
+               <button id="ok"><a href="../index.html" onclick="hide()">OK</a></button>
+            </div>
+            <script>
+                function show(){
+                    var alert= document.getElementById("containor");
+                    alert.style.display="block"
+                }
+                function hide(){
+                    var alert= document.getElementById("containor");
+                    alert.style.display="none"
+                }
+            </script>
 
     </body>
 </html>
