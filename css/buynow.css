@@ -1,0 +1,57 @@
+CSS
+/* Global styles */
+body {
+  font-family: sans-serif;
+  background-color: #f5f5f5; /* Pale yellow background */
+}
+
+
+h1, h2, h3 {
+  font-weight: bold;
+  color: black; /* Bright black heading color */
+}
+
+/* Header */
+.header {
+  background-color:#f7c210 ; /* Warm yellow background */
+  padding: 5px;
+  text-align: center;
+}
+
+/* Contact Details & Address */
+.contact-details
+.address {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #f0b22b; /* Golden border */
+}
+
+/* Forms */
+form {
+  margin: 0;
+  padding: 0;
+}
+
+label {
+  display: inline-block;
+  width: 150px;
+  font-weight: bold;
+}
+
+input {
+  width: 250px;
+  padding: 5px;
+  border: 1px solid #ebc335; /* Light golden border */
+  border-radius: 5px;
+}
+
+/* Button */
+.submission button {
+  background-color: #f7c210;
+  color: #272727; /* Black text */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  button: .hover;
+}
